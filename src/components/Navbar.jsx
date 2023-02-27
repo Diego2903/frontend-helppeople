@@ -13,7 +13,7 @@ export const Navbar = () => {
                     <Link to="/" style={{ color: "#fff", textDecoration: 'none' }}>HELPPEOPLE</Link>
                 </Typography>
                 <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center', justifyContent: 'center', background: '#000', color: '#fff', padding: '15px' }}>
-                    <Typography sx={{ minWidth: 100 }} component="a">
+                    <Typography sx={{ minWidth: 100 }}>
                         <Link to="/ciudadanos" style={{ color: "#fff", textDecoration: 'none' }}>Ciudadanos</Link>
                     </Typography>
                 </Box>

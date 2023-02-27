@@ -77,7 +77,7 @@ export const Vacantes = () => {
         setOpenMessage(false);
     };
 
-    const manejarNombreCiudadno = (event) => {
+    const manejarNombreCiudadano = (event) => {
         setIdCiudadano(event.target.value)
     }
 
@@ -167,7 +167,7 @@ export const Vacantes = () => {
                                     autoFocus
                                     value={idCiudadano}
                                     label="ciudadanos"
-                                    onChange={manejarNombreCiudadno}
+                                    onChange={manejarNombreCiudadano}
                                     inputProps={{
                                         name: 'ciudadanos',
                                         id: 'ciudadanos',
@@ -185,7 +185,7 @@ export const Vacantes = () => {
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={() => setOpen(false)}>Cerrar</Button>
-                        <Button onClick={(event) => guardarPostulacion(event)}>Guardar</Button>
+                        <Button onClick={guardarPostulacion}>Guardar</Button>
                     </DialogActions>
                 </Dialog>
             </>
